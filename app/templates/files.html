@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
+ <meta charset="UTF-8">
+ <title>My Images</title>
+</head>
+<body>
+
+    <ul>
+        {% for image in ulist  %}
+        <li>
+            <img  width="250" height="250" src =" {{ url_for('get_image', filename = image) }}" alt="{{image}}"/>
+        </li>
+        {% endfor %}
+    </ul>
+</html>
+
+
+{% endblock %}

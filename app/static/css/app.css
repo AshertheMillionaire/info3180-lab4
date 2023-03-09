@@ -18,3 +18,12 @@ body {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+li{
+    list-style: none;
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+}
