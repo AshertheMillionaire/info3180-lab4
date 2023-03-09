@@ -84,10 +84,11 @@ def login():
     return render_template("login.html", form=form)
 
 @app.route('/logout')
-def logout_user():
+@login_required
+def logout():
 
 
-    logout_user(user)
+    logout_user()
             flash('Logged out Successfully')
             return redirect(url_for('home'))
 
