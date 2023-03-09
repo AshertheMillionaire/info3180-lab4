@@ -89,8 +89,8 @@ def logout():
 
 
     logout_user()
-            flash('Logged out Successfully')
-            return redirect(url_for('home'))
+    flash('Logged out Successfully')
+    return redirect(url_for('home'))
 
 
 # user_loader callback. This callback is used to reload the user object from
